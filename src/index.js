@@ -9,3 +9,11 @@ burgerIcon.addEventListener('click', () =>{
 document.getElementById("button-neo-versailles").onclick = function () {
     location.href = "neo-versailles.html";
 };
+
+document.getElementById("button-lilys-adventure").onclick = function () {
+    location.href = "lilys-adventure.html";
+};
+
+document.getElementById("button-runaway").onclick = function () {
+    location.href = "runaway.html";
+};
