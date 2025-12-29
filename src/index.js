@@ -6,6 +6,10 @@ burgerIcon.addEventListener('click', () =>{
     navbarMenu.classList.toggle('is-active');
 })
 
+document.getElementById("button-terminal-glue").onclick = function () {
+    location.href = "terminal-glue.html";
+};
+
 document.getElementById("button-neo-versailles").onclick = function () {
     location.href = "neo-versailles.html";
 };

@@ -1,0 +1,104 @@
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Alec Carter</title>
+  <link rel="icon" type="image/x-icon" href="assets/favicon.ico">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css">
+  <script src="https://kit.fontawesome.com/9a8c45aa8f.js" crossorigin="anonymous"></script>
+</head>
+<body>
+  
+<nav class="navbar has-shadow is-white">
+  <!-- logo / brand -->
+  <div class="navbar-brand">
+    <a class="navbar-item">
+      <a href="index.html"><img src="assets/Alec-Logo.png" alt="site logo" style="max-height: 100px;" class="py-2 px-2"></a>
+    </a>
+    <a class="navbar-burger my-auto" id="burger">
+      <span></span>
+      <span></span>
+      <span></span>
+    </a>
+  </div>
+
+  <div class="navbar-menu" id="nav-links">
+    <div class="navbar-start">
+      <a href="index.html" class="navbar-item">Projects</a>
+      <a href="about-me.html" class="navbar-item">About Me</a>
+      <a href="resume.html" class="navbar-item">Resume</a>
+    </div>
+  </div>
+</nav>
+
+<!-- product info -->
+<section class="section">
+  <div class="container mb-6">
+    <h1 class="is-size-1 title">Terminal Glue (Working Title)</h1>
+    <h1 class="is-size-3 subtitle">Level Designer - Narrative Designer - Gameplay Programmer</h1>
+    <h1 class="is-size-3 subtitle">Duration: November 2024 - Present</h1>
+    <p>Terminal Glue is a project started as a personal project start by myself and my friend, <a href="https://www.linkedin.com/in/holly-e-allen/">Holly Allen</a>, to improve and practice our game development skills. This project has been worked on off and on as our schedules have allowed. It is a Unity built First-Person Horror game designed with puzzle mechanics and controllable companions.</p>
+    <br>
+    <p>I am working on the narrative and level design of this project as well as programming and developing game mechanics, systems, and character movement alongside Holly.</p>
+    <br>
+    <p>Terminal Glue immerses the player as a Antique restorer that works out of an artist commune converted from what used to be an old military base with a small bug problem. Working late one night, the player discovers one of the antiques they are working on is an ancient artifact containing captured souls. Evil souls are released when the artifact cracks open along with a helpful companion soul that possesses the form a wooden artist's mannequin. The player explores the old military base solving puzzles by commanding their new companion, returning the escaped souls back to the artifact, and running from the termite monster created from the most wicked soul released.</p>
+    <hr>
+
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h2 class="is-size-2 subtitle">Gameplay Programming</h2>
+        <p>For this project, I started off working on the character controller. We found a <a href="https://youtu.be/qdskE8PJy6Q?si=B0eBXDgZAdR9Kgrx">video</a> on youtube showing an interesting way of floating the character capsule and allowing physics to handle falling recoil, walking over small objects, and keeping the player at the correct height while climbing slopes and stairs. This was something we wanted to try building ourselves.</p>
+        <br>
+        <p>I worked on our hover script that uses a downward raycast to set a target height for the player capsule to float. It uses opposing gravity and an upward spring force to level out the player when their elevation changes. This can be applied both to the player character as well as the companions they command.</p>
+        <br>
+        <p>The GIF to the right demonstrates how the hover allows the player to walk over small objects without needing to jump, climb slopes, and fall from heights while returning to the target height with some recoil.</p>
+      </div>
+      <div class="column">
+        <img src="assets/TerminalGlue/TerminalGlue-CharacterMovementHovering.gif" alt="GIF of Character Movement">
+      </div>
+    </div>
+    <div class="columns is-vcentered">
+        <div class="column">
+            <img src="assets/TerminalGlue/TerminalGlue-CommandObject.gif" alt="GIF demonstrating the command object ability">
+          </div>
+        <div class="column">
+          <p>Next, I worked on the player's ability to command companions. The player should be able to select a companion and click where they should move.</p>
+          <br>
+          <p>I used a forward raycast to select 3D objects in the scene and click anywhere on the ground for them to move in a straight line towards. Thanks to the hover script, there is no need to pathfind around small objects on the floor. However, walls and larger objects will need to be pathed around. </p>
+          <br>
+          <p>The GIF to the left demonstrates the player selecting an object and clicking where it should move.</p>
+        </div>
+      </div>
+   </div>
+   <div class="columns is-vcentered">
+    <div class="column">
+      <p>Next step was to implement A* pathfinding into the companion movement to allow objects to navigate the levels.</p>
+      <br>
+      <p>This was my first time implementing A* in a 3D environment. I have had success many times in 2D games. However, this gave me a lot of trouble. While I believe my A* code would work correctly, it crashes the game. I have been looking into ways of fixing this. Either multi-threading to reduce the time needed to calculate the path in real time, or I may need to re-evaluate how A* is implemented when accomodating for a 3D environment.</p>
+      <br>
+      <p>This is where I last left off while working on this project</p>
+    </div>
+    <div class="column">
+      <!--<img src="" alt="GIF of A* Pathfinding">-->
+    </div>
+  </div>
+  <div class="container">
+    <div class="columns is-vcentered">
+      <div class="column">
+        <h2 class="is-size-2 subtitle">Contact Me</h2>
+        <p>Feel free to contact me through my <a href="mailto:awc9284@g.rit.edu" class="has-text-weight-bold">Email</a> and <a href="https://www.linkedin.com/in/alec-w-carter/" class="has-text-weight-bold">LinkedIn</a>. You can visit my <a href="https://alec_carter.artstation.com/" class="has-text-weight-bold">ArtStation</a> profile or my <a href="https://github.com/alecwcarter" class="has-text-weight-bold">GitHub</a> profile</p>
+        <div class="has-text-centered mt-4">
+          <a href="mailto:awc9284@g.rit.edu"><i class="fa-solid fa-envelope" style="font-size: 4rem;"></i></a>
+          <a href="https://alec_carter.artstation.com/"><i class="fa-brands fa-artstation" style="font-size: 4rem;"></i></a>
+          <a href="https://www.linkedin.com/in/alec-w-carter/"><i class="fa-brands fa-linkedin" style="font-size: 4rem;"></i></a>
+          <a href="https://github.com/alecwcarter"><i class="fa-brands fa-square-github" style="font-size: 4rem;"></i></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script src="src/index.js"></script>
+</body>
+</html>
